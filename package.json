@@ -8,23 +8,26 @@
     "test": "tests"
   },
   "dependencies": {
-    "eslint": "^6.8.0",
     "express": "^4.17.1",
     "init": "^0.1.2",
-    "jest": "^25.1.0",
     "nodemon": "^2.0.2",
-    "request": "^2.88.2",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
     "supertest": "^4.0.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "jest --verbose",
+    "test:watch": "npm run test -- --watchAll --coverage"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/asiamorozova/lab06.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
